@@ -16,6 +16,7 @@ module Zoom
     include Actions::Recording
     include Actions::IM::Chat
     include Actions::IM::Group
+    include Actions::Bot::Chat
 
     base_uri 'https://api.zoom.us/v2'
     headers 'Accept' => 'application/json'
@@ -33,3 +34,4 @@ end
 
 require 'zoom/clients/jwt'
 require 'zoom/clients/oauth'
+require 'zoom/clients/oauth2'
